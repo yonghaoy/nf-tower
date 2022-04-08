@@ -14,8 +14,7 @@ tower:
   admin:
     password: secret
   trustedEmails:
-    - '*@seqera.io'
-    - 'paolo.ditommaso@gmail.com'
+    - '*@verily.com'
   trace:
     timeout: 90s
   cron:
@@ -73,7 +72,7 @@ endpoints:
   loggers:
     enabled: true
   mailer:
-    enabled: true
+    enabled: false
   health:
     disk-space:
       enabled: true

@@ -27,14 +27,15 @@ export class AuthGuard implements CanActivate {
   }
 
   checkLogin(): boolean {
-    if (this.authService.isUserAuthenticated) {
-      return true;
-    }
-
-    console.log('User not authenticated');
-    this.notificationService.showErrorNotification('Please log in');
-    this.authService.logoutAndGoHome();
-    return false;
+    // if (this.authService.isUserAuthenticated) {
+    //   return true;
+    // }
+    //
+    // console.log('User not authenticated');
+    // this.notificationService.showErrorNotification('Please log in');
+    // this.authService.logoutAndGoHome();
+    // return false;
+    return true;
   }
 
 }
