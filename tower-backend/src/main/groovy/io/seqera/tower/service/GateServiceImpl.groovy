@@ -133,6 +133,9 @@ class GateServiceImpl implements GateService {
 
     protected String buildAccessUrl(User user) {
         String accessUrl = "${serverUrl}/auth?uid=${user.getUid()}&token=${user.authToken}"
+        log.info "~~~~~~~~~accessUrl~~~~~~${accessUrl}"
+        log.info "~~~~~~~~~accessUrl~~~~~~${accessUrl}"
+        log.info "~~~~~~~~~accessUrl~~~~~~${accessUrl}"
         return new URI(accessUrl).toString()
     }
 

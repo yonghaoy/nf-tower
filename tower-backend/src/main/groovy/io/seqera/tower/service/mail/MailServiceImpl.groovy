@@ -96,8 +96,9 @@ class MailServiceImpl implements MailService {
         Mail mail = null
         try {
             mail = pendingMails.take()
-            log.debug "Mail sent to=${mail.to} subject=${mail.subject}"
-            mailer.send(mail)
+            log.info "Mail sent to=${mail.to} subject=${mail.subject}"
+            log.info "Mail content=${mail.body}"
+            // mailer.send(mail)
             sentCount +=1
             errorCount =0
         }
